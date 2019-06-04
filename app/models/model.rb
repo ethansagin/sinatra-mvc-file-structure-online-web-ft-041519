@@ -3,18 +3,10 @@ class Dog
   
   @@all = []
   
-  def initialize(:name, :age, :breed)
+  def initialize(name, breed, age)
     @name = name
     @breed = breed
     @age = age
-    @@all << self
-  end
-  
-  def self.create(name, breed, age)
-    self.new(name, breed, age).save
-  end
-  
-  def save
     @@all << self
   end
   

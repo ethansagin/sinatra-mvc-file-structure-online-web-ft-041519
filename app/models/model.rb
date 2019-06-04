@@ -9,4 +9,10 @@ class Dog
     @age = age
   end
   
+  def self.create(name, age, breed)
+    self.new(name, age, breed).save
+  end
+  
+  def save
+    
 end
